@@ -1,0 +1,4 @@
+interface:
+  display_name: "CHARMM-GUI Solution Builder"
+  short_description: "Prepare and verify solvated molecular systems"
+  default_prompt: "Use $charmm-gui-solution-builder to prepare my selected systems, ask for missing scientific choices, and download verified packages."

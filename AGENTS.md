@@ -1,0 +1,2 @@
+# Maintaining these skills
+Keep each skill self-contained when installed separately. Browser work must use the agent's supported computer-use interface and current observed UI. Never store credentials, private job links, research inputs, or generated packages in Git. Preserve source molecular files. Keep validation claims tied to evidence in docs/validation.md. Never describe an untested workflow or edge case as validated. Preserve the explicitly documented Drude and negative-test limitations.

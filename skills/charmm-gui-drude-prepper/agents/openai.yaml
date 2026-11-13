@@ -1,0 +1,4 @@
+interface:
+  display_name: "CHARMM-GUI Drude Prepper"
+  short_description: "Prepare and verify Drude solution packages"
+  default_prompt: "Use $charmm-gui-drude-prepper to prepare my selected systems, ask for missing scientific choices, and download verified packages."
