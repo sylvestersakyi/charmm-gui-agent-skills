@@ -32,7 +32,7 @@ A browser download navigation error was recovered by returning to the same compl
 | Missing supplied input file | Rejected before creating destination |
 | Existing staging/extraction destinations | Rejected without overwriting |
 | Wrong-job, incomplete, corrupt, oversized, traversal, link and duplicate-member archives | Rejected |
-| Clean-checkout installation to isolated skill directories | See installation evidence below |
+| Clean-checkout installation to isolated skill directories | Pass: local Git clone, isolated copies, references and helper invocation; existing names refused |
 | Missing ligand requirement when no SDF is supplied at all | Instruction review only; no live negative GUI submission |
 | Ambiguous additive PSF/PDB pairing | Required identity/provenance checks documented; not behaviorally tested |
 | Drude conversion | Not run; needs an equilibrated additive fixture |
@@ -43,3 +43,5 @@ Tests establish the helper's file handling, not autonomous chemistry validation.
 ## Reproduce local checks
 
 Run `python3 -m unittest discover -s tests -v` from a checkout. Copy each complete skill folder into a new isolated skills directory, confirm the referenced Markdown and helper files exist, and run each helper's `--help`. Installation must refuse or preserve existing skill names. Actual discovery in a fresh Codex chat depends on that installation's skills configuration.
+
+Installation evidence: a fresh local Git clone passed all seven tests. Both skill folders were copied into a temporary isolated skills directory; linked local references resolved, both helpers ran, and repeat copy attempts refused existing destinations. Personal installed skills were preserved. Fresh-chat discovery was not tested.
